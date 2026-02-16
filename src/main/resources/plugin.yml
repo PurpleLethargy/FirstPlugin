@@ -1,0 +1,26 @@
+name: PurpyCore
+version: 1.0-SNAPSHOT
+main: me.Purpy.firstPlugin.FirstPlugin
+api-version: 1.21
+authors:
+  - PurpleLethargy
+description: I hope u like this plugin :)
+website: https://purpy.straw.page/
+
+commands:
+  broadcast:
+    description: Broadcasts a message to all players
+    usage: /broadcast <message>
+    permission: purpy.broadcast
+  getrandomquote:
+    description: Sends a random quote to u
+    usage: /getrandomquote
+    permission: purpy.getquote
+    aliases:
+      - quote
+      - generatequote
+      - getquote
+
+permissions:
+  purpy.broadcast:
+    default: op
